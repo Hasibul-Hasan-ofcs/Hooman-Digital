@@ -39,7 +39,7 @@ const Hero = () => {
             more.
           </p>
           <div className="py-6">
-            <CommonButtonYellow text="Our portfolio" link="/" />
+            <CommonButtonYellow text="Our portfolio" link="/" classes="" />
           </div>
           <div className="py-9">
             <img src="/png/persons.png" alt="persons" />

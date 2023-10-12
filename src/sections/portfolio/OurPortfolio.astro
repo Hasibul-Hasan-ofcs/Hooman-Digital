@@ -1,0 +1,32 @@
+---
+import { Image } from "astro:assets";
+import portfolioData from "../../data/portfolio/PortfolioData.js"
+import CommonButtonYellow from "../../components/button/CommonButtonYellow";
+---
+
+<div class="container mx-auto my-16 px-4 md:px-12">
+    <div class="flex flex-wrap flex-col lg:flex-row items-center">
+        <div class="w-full lg:w-[45%]">
+            <h3 class="py-9 font-bold text-5xl uppercase">Our <br/> portfolio</h3>
+        </div>
+        <div class="w-full lg:w-[55%]">
+            <p class="text-justify text-lg">
+                At Hooman Digital, we're proud of the work we've done for our clients. Our portfolio showcases some of our recent projects, highlighting our expertise in web3 industry and how we've helped other clients succeed.
+            </p>
+        </div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {
+            portfolioData.map(({image,title,type})=><div>
+                <div class="w-full h-[400px] img-hover rounded-sm cursor-grab">
+                    <Image src={image} alt={title} />
+                </div>
+                <h1 class="text-xl pt-4 font-semibold uppercase">{title}</h1>
+                <small>{type}</small>
+            </div>)
+        }
+    </div>
+    <div class="flex items-center justify-center py-16">
+        <CommonButtonYellow text="View Projects" classes="" link="/" />
+    </div>
+</div>

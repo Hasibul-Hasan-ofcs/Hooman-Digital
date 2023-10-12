@@ -1,10 +1,10 @@
 import React from "react";
 
-const CommonButtonYellow = ({ link, text }) => {
+const CommonButtonYellow = ({ link, text, classes }) => {
   return (
     <a
       href={link}
-      className="bg-[#fae86e] rounded-full px-6 py-3 w-fit flex items-center text-base font-semibold"
+      className={`bg-[#fae86e] rounded-full px-6 py-3 w-fit flex items-center text-base font-semibold ${classes}`}
     >
       {text} &nbsp;
       <span>

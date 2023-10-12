@@ -1,0 +1,51 @@
+---
+import { Image } from "astro:assets";
+import Meeting3 from "../../assets/png/meet-3.png"
+import yArrow from "../../assets/png/yellow-arrow.png"
+import animVector2 from "../../assets/png/anim-vector2.png"
+import animVector from "../../assets/png/anim-vector.png"
+import servicesData from "../../data/services/ServicesData.js";
+---
+<div class="bg-black">
+    
+    <!-- Main portion -->
+    <div class="container mx-auto my-16 px-4 md:px-12 py-20 relative">
+        
+        <!-- Rotating animation -->
+        <div class="h-[100px] w-[100px] bg-[#fffcf9] rounded-full absolute top-0 right-24 lg:right-0 -translate-y-1/2 -translate-x-1/2 flex items-center justify-center">
+            <Image src={animVector2} alt="text image 2" class="anim-img h-full w-full"/>
+            <Image src={animVector} alt="text image" class="h-auto w-auto"/>
+        </div>
+        
+        <div class="flex flex-wrap flex-col lg:flex-row items-center">
+            <div class="w-full lg:w-[45%]">
+                <h3 class="py-9 font-bold text-5xl uppercase text-white">WE PROVIDE  <br/> SERVICES</h3>
+            </div>
+            <div class="w-full lg:w-[55%]">
+                <p class="text-justify text-lg text-white">
+                    At Hooman Digital, we offer a range of services to help you achieve your digital goals. Our services include: At Hooman Digital, we offer a range of services to help you achieve your digital goals. Our services include:
+                </p>
+            </div>
+        </div>
+        <div class="flex flex-wrap flex-col lg:flex-row items-center">
+            <div class="w-full py-9 lg:py-0 lg:w-[45%]">
+                <Image src={Meeting3} alt="meeting image 3" />
+            </div>
+            <div class="w-full lg:w-[55%]">
+                <hr class="h-[2px] text-white" />
+                {
+                    servicesData.map(({count, topic})=><div>
+                        <div class="py-5 flex justify-between items-center">
+                            <div class="flex">
+                                <p class="text-[#fae86e] pe-4 text-[28px] uppercase">{count}</p>
+                                <p class="text-white text-[28px] uppercase">{topic}</p>
+                            </div>
+                            <Image src={yArrow} alt={`${count} ${topic}`} class="h-full w-auto"/>
+                        </div>
+                        <hr class="h-[2px] text-white" />
+                    </div>)
+               }
+            </div>
+        </div>
+    </div>
+</div>

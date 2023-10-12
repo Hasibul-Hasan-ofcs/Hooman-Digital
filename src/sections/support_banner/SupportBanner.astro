@@ -1,0 +1,22 @@
+---
+import { Image } from "astro:assets";
+import callMic from "../../assets/png/call-mic.png"
+import CommonButtonYellow from "../../components/button/CommonButtonYellow";
+---
+
+<div class="container mx-auto my-16 px-4 md:px-12">
+    <div class="bg-[#fae86e] px-9 py-6 flex flex-wrap flex-col-reverse md:flex-row">
+        <div class="w-full md:w-1/2 lg:w-[65%]">
+            <h3 class="py-9 font-bold text-5xl">LET'S MAKE THINGS HAPPEN</h3>
+            <p class="text-justify text-lg">
+                No matter what your digital needs are, we have the expertise and experience to help you succeed. Explore our services and portfolio to see how we can help you elevate your digital presence. And when you're ready, contact us to schedule a consultation with our team.
+            </p>
+            <div class="py-9">
+                <CommonButtonYellow text="Let's Talk to us" link="/" classes={"border border-gray-900"}/>
+            </div>
+        </div>
+        <div class="w-full md:w-1/2 lg:w-[35%] flex items-center justify-center">
+            <Image src={callMic} alt="Microphone image" class="w-[70%]"/>
+        </div>
+    </div>
+</div>
