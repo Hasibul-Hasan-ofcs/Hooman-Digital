@@ -1,0 +1,26 @@
+<svg width="826" height="676" viewBox="0 0 826 676" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="825" width="1.00004" height="805" transform="rotate(90 825 0)" fill="#F3EDE6"/>
+<rect x="825" y="75" width="1.00004" height="805" transform="rotate(90 825 75)" fill="#F3EDE6"/>
+<rect x="825" y="150" width="1.00004" height="805" transform="rotate(90 825 150)" fill="#F3EDE6"/>
+<rect x="825" y="225" width="1.00004" height="805" transform="rotate(90 825 225)" fill="#F3EDE6"/>
+<rect x="825" y="300" width="1.00004" height="805" transform="rotate(90 825 300)" fill="#F3EDE6"/>
+<rect x="825" y="375" width="1.00004" height="805" transform="rotate(90 825 375)" fill="#F3EDE6"/>
+<rect x="825" y="450" width="1.00004" height="805" transform="rotate(90 825 450)" fill="#F3EDE6"/>
+<rect x="825" y="525" width="1.00004" height="805" transform="rotate(90 825 525)" fill="#F3EDE6"/>
+<rect x="825" y="600" width="1.00004" height="805" transform="rotate(90 825 600)" fill="#F3EDE6"/>
+<rect x="825" y="675" width="1.00004" height="805" transform="rotate(90 825 675)" fill="#F3EDE6"/>
+<rect x="601" y="675" width="1.00006" height="675" transform="rotate(-180 601 675)" fill="#F3EDE6"/>
+<rect x="676" y="675" width="1.00006" height="675" transform="rotate(-180 676 675)" fill="#F3EDE6"/>
+<rect x="751" y="675" width="1.00006" height="675" transform="rotate(-180 751 675)" fill="#F3EDE6"/>
+<rect x="826" y="676" width="1.00006" height="676" transform="rotate(-180 826 676)" fill="#F3EDE6"/>
+<rect x="526" y="675" width="1.00006" height="675" transform="rotate(-180 526 675)" fill="#F3EDE6"/>
+<rect x="451" y="675" width="1.00006" height="675" transform="rotate(-180 451 675)" fill="#F3EDE6"/>
+<rect x="376" y="675" width="1.00006" height="675" transform="rotate(-180 376 675)" fill="#F3EDE6"/>
+<rect x="301" y="675" width="1.00006" height="675" transform="rotate(-180 301 675)" fill="#F3EDE6"/>
+<rect x="226" y="675" width="1.00006" height="675" transform="rotate(-180 226 675)" fill="#F3EDE6"/>
+<rect x="151" y="675" width="1.00006" height="675" transform="rotate(-180 151 675)" fill="#F3EDE6"/>
+<rect x="76" y="675" width="1.00006" height="675" transform="rotate(-180 76 675)" fill="#F3EDE6"/>
+<rect x="1" y="600" width="1.00006" height="600" transform="rotate(-180 1 600)" fill="#F3EDE6"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M787 377H750V414V451H787H824V414V377H787ZM787 377C807.435 377 824 393.565 824 414C824 434.435 807.435 451 787 451C766.565 451 750 434.435 750 414C750 393.565 766.565 377 787 377Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M787.657 412.343V400H786.114V412.343H773V413.886H786.114V427H787.657V413.886H800V412.343H787.657Z" fill="black"/>
+</svg>
