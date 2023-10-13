@@ -1,7 +1,10 @@
 ---
 import { Image } from "astro:assets";
 import MainLogo from "../../assets/png/hooman-logo-main2.png"
-
+import facebook from "../../assets/png/facebook.png"
+import youtube from "../../assets/png/youtube.png"
+import twitter from "../../assets/png/twitter.png"
+import instagram from "../../assets/png/instagram.png"
 import {companyData, contactData, servicesData} from "../../data/footer_data/FooterData.js"
 
 ---
@@ -35,9 +38,9 @@ import {companyData, contactData, servicesData} from "../../data/footer_data/Foo
         <h4 class="font-bold text-lg pb-3">Start a Conversation</h4>
         <div class="flex flex-col gap-2">
           {
-            contactData.map(({link, text}, indx)=> <a class="text-sm transition-all hover:underline" href={link}>{text}</a>)
+            contactData.map(({link, text, image}, indx)=><a class="text-sm transition-all hover:underline flex gap-2 items-center" href={link}> <Image src={image} alt={text} /> {text}</a>)
           }
-        </div>
+        </>
       </div>
     </div>
   </div>
@@ -49,25 +52,25 @@ import {companyData, contactData, servicesData} from "../../data/footer_data/Foo
           href="/"
           class="h-[30px] w-[30px] rounded-full border border-gray-900 flex items-center justify-center transition-all hover:bg-white hover:scale-105"
         >
-          <img src="/png/twitter.png" alt="twitter icon" />
+          <Image src={twitter} alt="twitter icon" />
         </a>
         <a
           href="/"
           class="h-[30px] w-[30px] rounded-full border border-gray-900 flex items-center justify-center transition-all hover:bg-white hover:scale-105"
         >
-          <img src="/png/facebook.png" alt="facebook icon" />
+          <Image src={facebook} alt="facebook icon" />
         </a>
         <a
           href="/"
           class="h-[30px] w-[30px] rounded-full border border-gray-900 flex items-center justify-center transition-all hover:bg-white hover:scale-105"
         >
-          <img src="/png/instagram.png" alt="instagram icon" />
+          <Image src={instagram} alt="instagram icon" />
         </a>
         <a
           href="/"
           class="h-[30px] w-[30px] rounded-full border border-gray-900 flex items-center justify-center transition-all hover:bg-white hover:scale-105"
         >
-          <img src="/png/youtube.png" alt="youtube icon" />
+          <Image src={youtube} alt="youtube icon" />
         </a>
       </div>
     </div>

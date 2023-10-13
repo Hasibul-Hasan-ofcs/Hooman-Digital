@@ -24,7 +24,7 @@ const contents = [
     link: "/",
   },
 ];
-
+/* TODO */
 const Hero = () => {
   return (
     <div className="flex flex-wrap">

@@ -1,3 +1,8 @@
+import baseService from "../../assets/png/base-service.png";
+import mail from "../../assets/png/mail.png";
+import phone from "../../assets/png/phone.png";
+import whatsapp from "../../assets/png/whatsapp.png";
+
 const companyData = [
   {
     text: "Hire Team",
@@ -52,22 +57,22 @@ const contactData = [
   {
     text: "Hooman Digital",
     link: "/",
-    image: "../../assets/png/base-service.png",
+    image: baseService,
   },
   {
     text: "hello@hoomandigital.com",
     link: "/",
-    image: "../../assets/png/mail.png",
+    image: mail,
   },
   {
     text: "+91 123-456-0123",
     link: "/",
-    image: "../../assets/png/phone.png",
+    image: phone,
   },
   {
     text: "+91 123-456-0124",
     link: "/",
-    image: "../../assets/png/whatsapp.png",
+    image: whatsapp,
   },
 ];
 
