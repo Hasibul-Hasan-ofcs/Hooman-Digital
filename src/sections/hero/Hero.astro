@@ -1,0 +1,53 @@
+---
+import CommonButtonYellow from "../../components/button/CommonButtonYellow.jsx";
+import CommonButtonOutlined from "../../components/button/CommonButtonOutlined.jsx";
+import contents from "../../data/hero/HeroData.js";
+import meet1 from "../../assets/png/meet-1.png";
+import persons from "../../assets/png/persons.png";
+import { Image } from "astro:assets";
+---
+
+<div
+  class="min-h-[680px] bg-[url('/svg/hero-grid.svg')] bg-contain bg-no-repeat bg-left mt-[100px]"
+>
+  <div class="container mx-auto flex flex-wrap flex-col md:flex-row">
+    <!-- left portion -->
+    <div class="w-full lg:w-3/5 ps-4 md:ps-12 pt-20">
+      <h1
+        class="text-[50px] md:text-7xl lg:text-[85px] leading-none font-medium"
+      >
+        INSPIRING BRAND EXPERIENCES
+      </h1>
+      <p class="py-6 text-xl">
+        Our team of experts specializes in web design & Development, branding,
+        content creation, UI/UX Design, Community manage, and more.
+      </p>
+      <div class="py-6">
+        <CommonButtonYellow text="Our portfolio" link="/" classes="" />
+      </div>
+      <div class="py-9">
+        <Image src={persons} alt="persons" />
+        <p class="py-6 text-xl w-1/2">
+          A forward-thinking digital design studio delivering subtle
+          experiences.
+        </p>
+      </div>
+    </div>
+
+    <!-- right portion -->
+    <div
+      class="w-full lg:w-2/5 ps-4 lg:ps-20 pe-4 lg:pe-20 flex flex-col justify-end items-center lg:items-end"
+    >
+      <Image src={meet1} alt="meeting image" class="w-full" />
+      <div class="flex justify-end">
+        <div class="flex flex-wrap gap-4 py-6 w-fit">
+          {
+            contents.map(({ text, link }, indx) => (
+              <CommonButtonOutlined text={text} link={link} />
+            ))
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
