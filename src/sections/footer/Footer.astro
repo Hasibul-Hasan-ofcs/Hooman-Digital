@@ -1,12 +1,15 @@
 ---
 import { Image } from "astro:assets";
-import MainLogo from "../../assets/png/hooman-logo-main2.png"
-import facebook from "../../assets/png/facebook.png"
-import youtube from "../../assets/png/youtube.png"
-import twitter from "../../assets/png/twitter.png"
-import instagram from "../../assets/png/instagram.png"
-import {companyData, contactData, servicesData} from "../../data/footer_data/FooterData.js"
-
+import MainLogo from "../../assets/png/hooman-logo-main2.png";
+import facebook from "../../assets/png/facebook.png";
+import youtube from "../../assets/png/youtube.png";
+import twitter from "../../assets/png/twitter.png";
+import instagram from "../../assets/png/instagram.png";
+import {
+  companyData,
+  contactData,
+  servicesData,
+} from "../../data/footer_data/FooterData.js";
 ---
 
 <div>
@@ -15,14 +18,19 @@ import {companyData, contactData, servicesData} from "../../data/footer_data/Foo
       <div class="w-full md: md:w-1/2 lg:w-2/5">
         <Image src={MainLogo} alt="main logo version 2" />
         <p class="py-8 w-[65%] text-lg">
-          At Hooman Digital, we're more than just a team of digital experts. We're a group of individuals.
+          At Hooman Digital, we're more than just a team of digital experts.
+          We're a group of individuals.
         </p>
       </div>
       <div class="w-full pt-6 md:pt-0 md:w-1/2 lg:w-1/5">
         <h4 class="font-bold text-lg pb-3">Company</h4>
         <div class="flex flex-col gap-2">
           {
-            companyData.map(({link, text}, indx)=> <a class="text-sm transition-all hover:underline" href={link}>{text}</a>)
+            companyData.map(({ link, text }) => (
+              <a class="text-sm transition-all hover:underline" href={link}>
+                {text}
+              </a>
+            ))
           }
         </div>
       </div>
@@ -30,7 +38,11 @@ import {companyData, contactData, servicesData} from "../../data/footer_data/Foo
         <h4 class="font-bold text-lg pb-3">Services</h4>
         <div class="flex flex-col gap-2">
           {
-            servicesData.map(({link, text}, indx)=> <a class="text-sm transition-all hover:underline" href={link}>{text}</a>)
+            servicesData.map(({ link, text }) => (
+              <a class="text-sm transition-all hover:underline" href={link}>
+                {text}
+              </a>
+            ))
           }
         </div>
       </div>
@@ -38,14 +50,24 @@ import {companyData, contactData, servicesData} from "../../data/footer_data/Foo
         <h4 class="font-bold text-lg pb-3">Start a Conversation</h4>
         <div class="flex flex-col gap-2">
           {
-            contactData.map(({link, text, image}, indx)=><a class="text-sm transition-all hover:underline flex gap-2 items-center" href={link}> <Image src={image} alt={text} /> {text}</a>)
+            contactData.map(({ link, text, image }) => (
+              <a
+                class="text-sm transition-all hover:underline flex gap-2 items-center"
+                href={link}
+              >
+                {" "}
+                <Image src={image} alt={text} /> {text}
+              </a>
+            ))
           }
-        </>
+        </div>
       </div>
     </div>
   </div>
   <div class="bg-[#fff8f2]">
-    <div class="container mx-auto px-4 md:px-12 flex flex-wrap justify-between items-center py-6 ">
+    <div
+      class="container mx-auto px-4 md:px-12 flex flex-wrap justify-between items-center py-6"
+    >
       <p>Copyright © 2023. All Rights Reserved.</p>
       <div class="flex gap-4">
         <a
