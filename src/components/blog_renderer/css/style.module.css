@@ -1,0 +1,52 @@
+.blogRenderer h1 {
+  font-weight: bold;
+  font-size: 28px;
+  margin-top: 28px;
+  margin-bottom: 28px;
+}
+
+.blogRenderer h2 {
+  font-weight: bold;
+  font-size: 24px;
+  margin-top: 36px;
+  margin-bottom: 16px;
+}
+
+.blogRenderer h3 {
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.blogRenderer ul {
+  margin-left: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.blogRenderer ul li::before {
+  content: "\2022";
+  color: #d1d5db;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.blogRenderer ol {
+  margin-left: 25px;
+  list-style-type: decimal;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.blogRenderer p {
+  line-height: 28px;
+}

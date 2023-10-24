@@ -2,6 +2,10 @@
 import { Image } from "astro:assets";
 import hommanMainText from "../../assets/png/hooman-logo-main-text.png";
 import hommanMainRect from "../../assets/png/hooman-logo-main-rectangle.png";
+
+const { pathname } = Astro.url;
+const pathArray = pathname.split("/");
+const currentPath = pathArray[1];
 ---
 
 <div class="fixed top-0 left-0 bg-[#fffcf9] z-30 w-full">
@@ -20,9 +24,9 @@ import hommanMainRect from "../../assets/png/hooman-logo-main-rectangle.png";
         class="h-[35px] w-fit"
       />
     </a>
-    <div class="flex gap-4 md:gap-8">
-      <a href="/" class="font-bold"> Home</a>
-      <a href="/blog" class="font-bold"> Blog</a>
-    </div>
+    <nav class="flex gap-4 md:gap-8">
+      <a class={currentPath === "" ? "active" : ""} href="/"> Home</a>
+      <a class={currentPath === "blog" ? "active" : ""} href="/blog"> Blog</a>
+    </nav>
   </div>
 </div>
